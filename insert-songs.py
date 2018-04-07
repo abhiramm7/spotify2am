@@ -54,6 +54,6 @@ with open('itunes.csv') as itunes_identifiers_file:
 
 outfile = open("failed_songs.csv", "w")
 writer = csv.writer(outfile)
-for row in l:
+for row in failed_songs:
     writer.writerow(row)
 outfile.close()
